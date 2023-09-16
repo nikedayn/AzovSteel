@@ -1,0 +1,105 @@
+header {
+    padding-top: 15px;
+    .top_header{
+        .container {
+            display: flex;
+            column-gap: 20px;
+            justify-content: space-between;
+        }
+
+        .left_part {
+            display: flex;
+            align-items: center;
+            column-gap: 25px;
+            width: 40%;
+        }
+
+        .right_part {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    .logo_img {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 60px;
+
+        .green_logo {
+            width: 100%;
+        }
+
+        .left_logo {
+            position: absolute;
+            width: calc(100%/2 - 1px);
+        }
+
+        .right_logo {
+            position: absolute;
+            left: 31px;
+            width: calc(100%/2 - 1px);
+        }
+    }
+
+    .logo_text {
+        font-size: 16px;
+        font-weight: 700;
+        
+        .name {
+            font-size: 28px;
+            text-align: center;
+            color: $mainColor;
+        }
+    
+        .under_logo {
+            color: $logoColor;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+            font-family: 'Roboto';
+        }
+    
+        hr {
+            width: 30px;
+            border: none;
+            height: 2px;
+            background-color: $logoColor;
+        }
+    }
+}
+        
+.where_do_we_deliver {
+    font-weight: 300;
+    font-size: 12px;
+    word-wrap: break-word;
+    width: 60%;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.our_number {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.call_phone {
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px dashed;
+}
