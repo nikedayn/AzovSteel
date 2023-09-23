@@ -1,6 +1,8 @@
 //header parts
 header {
+    margin-bottom: 40px;
     padding-top: 15px;
+
     .top_header{
         margin-bottom: 16px;
 
@@ -151,7 +153,7 @@ header {
     p {
         color: #FFFF;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 
@@ -218,6 +220,7 @@ header {
     display: flex;
     align-items: center;
     color: #FFFF;
+
     .numder {
         position: absolute;
         width: 25px;

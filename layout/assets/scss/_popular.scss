@@ -1,0 +1,60 @@
+.popular_section {
+    margin-bottom: 75px;
+
+    .container {
+        padding-top: 56px;
+        padding-bottom: 56px;
+        background-color: #FAFAFA;
+    }
+}
+
+.slider_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    .slider_btns {
+        display: flex;
+        column-gap: 60px;
+        .left_arrow {
+            transform: rotate(90deg);
+        }
+
+        .right_arrow {
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.popular_slider_list {
+    display: flex;
+    column-gap: 50px;
+
+    &_item {
+        width: calc(100%/4 - 25px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        padding: 40px;
+        justify-content: space-around;
+        border-radius: 4px;
+        border: 1px #E0E0E0 solid;
+
+        h3 {
+            text-align: center;
+        }
+
+        &:first-child {
+            position: relative;
+            justify-content: end;
+
+            img {
+                top: 5px;
+                position: absolute;
+                height: 180px;
+            }
+        }
+    }
+}

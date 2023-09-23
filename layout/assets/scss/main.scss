@@ -65,8 +65,8 @@ body {
 }
 
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -105,3 +105,12 @@ button {
 
 //header
 @import 'header';
+
+//homepage
+@import 'homepage';
+
+//types
+@import 'types';
+
+//popular
+@import 'popular';
