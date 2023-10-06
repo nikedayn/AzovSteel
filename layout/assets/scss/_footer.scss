@@ -1,0 +1,199 @@
+footer {
+    padding-top: 40px;
+    background-color: #F2F2F2;
+
+    
+
+    .bottom-footer {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #666;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 116.5px;
+
+    .logo_img {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 60px;
+
+        .green_logo {
+            width: 100%;
+        }
+
+        .left_logo {
+            position: absolute;
+            width: calc(100%/2 - 1px);
+        }
+
+        .right_logo {
+            position: absolute;
+            left: 31px;
+            width: calc(100%/2 - 1px);
+        }
+    }
+
+    .logo_text {
+        font-size: 16px;
+        font-weight: 700;
+
+        .name {
+            font-size: 28px;
+            text-align: center;
+            color: #387C43;
+        }
+
+        .under_logo {
+            color: #979897;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+            font-family: 'Roboto';
+        }
+
+        hr {
+            width: 30px;
+            border: none;
+            height: 2px;
+            background-color: #979897;
+        }
+    }
+}
+
+
+
+.confidents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.confidents-text {
+    color: #000;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration-line: underline;
+}
+
+.confidents-text-laws {
+    color: #4E4E4E;
+    font-size: 10px;
+    line-height: 11px;
+    width: 199px;
+}
+
+.text-nav {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-main-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-main-text {
+    margin-bottom: 20px;
+}
+
+.company-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalog-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.company-nav-detail {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.text-number {
+    color: #000;
+    font-size: 18px;
+}
+
+.text-email {
+    color: #000;
+    font-size: 18px;
+}
+
+.call-button {
+    width: 162px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background-color: #F3AA3C;
+    border: 0px;
+}
+
+.button-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-end-text {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    color: #ffffff;
+}
+
+.footer-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 53px;
+}
+
+.footer-img-insta {
+    width: 18px;
+    height: 18px;
+    margin-right: 100px;
+}
+
+.footer-company {
+    width: 42px;
+    height: 14.99px;
+    
+}
+
+.foter-end-img {
+    display: flex;
+}
