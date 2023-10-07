@@ -50,6 +50,7 @@ $logoColor: #979897;
 $hLColor: #DCDCDC;
 
 //global styles
+
 body {
     margin: 0;
     font-weight: 400;
@@ -114,3 +115,12 @@ button {
 
 //popular
 @import 'popular';
+
+//special
+@import 'special';
+
+//services
+@import 'services';
+
+//clients
+@import 'clients';
