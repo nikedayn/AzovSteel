@@ -50,12 +50,12 @@ $logoColor: #979897;
 $hLColor: #DCDCDC;
 
 //global styles
-
 body {
     margin: 0;
     font-weight: 400;
     font-size: 14px;
     font-family: 'Roboto';
+    background-size: contain;
 }
 
 .wraper {
@@ -101,33 +101,3 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
-
-//header
-@import 'header';
-
-//homepage
-@import 'homepage';
-
-//types
-@import 'types';
-
-//popular
-@import 'popular';
-
-//special
-@import 'special';
-
-//services
-@import 'services';
-
-//clients
-@import 'clients';
-
-// advantages
-@import 'advantages';
-
-// news section
-@import 'news';
-
-// footer
-@import 'footer';

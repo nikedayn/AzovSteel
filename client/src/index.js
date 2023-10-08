@@ -9,14 +9,12 @@ import './Components/assets/scss/style.scss';
 import App from './App';
 
 //импорт redux toolkit
-import store from './redux/store';
-import { Provider } from 'react-redux';
+// import store from './redux/store';
+// import { Provider } from 'react-redux';
 
 let root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store}>
-        <App/>
-    </Provider>
+    <App/>
 )
 
 // If you want to start measuring performance in your app, pass a function
