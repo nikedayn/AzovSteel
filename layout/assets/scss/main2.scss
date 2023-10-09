@@ -51,6 +51,7 @@ $secondMainColor: #F3AA3C;
 $logoColor: #979897;
 $hLColor: #DCDCDC;
 
+
 body {
     margin: 0;
     font-weight: 400;
@@ -104,8 +105,9 @@ button {
     cursor: pointer;
 }
 
-//SANYA SUPER GIGABYTE SECTION 1
 
-@import 'special';
-@import 'services';
-@import 'clients';
+//SANYA SUPER GIGABYTE SECTION 2
+
+
+@import 'header';
+@import 'hitler';
