@@ -1,0 +1,13 @@
+.left_part {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    width: 40%;
+
+    .where_do_we_deliver {
+        font-weight: 300;
+        font-size: 12px;
+        word-wrap: break-word;
+        width: 60%;
+    }
+}

@@ -1,0 +1,24 @@
+.right_part {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
+    .our_number {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        
+        a {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    
+    .call_phone {
+        font-size: 12px;
+        font-weight: 400;
+        border-bottom: 1px dashed;
+    }
+}
+
