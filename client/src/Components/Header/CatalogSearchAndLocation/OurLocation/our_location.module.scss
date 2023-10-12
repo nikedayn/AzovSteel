@@ -1,0 +1,9 @@
+.our_location {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+
+    &_text {
+        width: 245px;
+    }
+}
