@@ -11,11 +11,11 @@ const CatalogSearchAndLocation = () => {
                 content={[
                     <p>КАТАЛОГ</p>,
                     <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 1L6.5 6L1 1" stroke="#FFFF" stroke-width="3"/>
+                        <path d="M12 1L6.5 6L1 1" stroke="#FFFF" strokeWidth="3"/>
                     </svg>
                 ]}
             />
-            <input class={s.search_input} placeholder="Поиск по каталогу" type="search" name="" id=""/>
+            <input className={s.search_input} placeholder="Поиск по каталогу" type="search" name="" id=""/>
             <OurLocation/>
         </div>
     );

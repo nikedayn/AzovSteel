@@ -3,3 +3,28 @@
     align-items: center;
     column-gap: 25px;
 }
+
+.our_successes_list {
+    display: flex;
+    column-gap: 95px;
+}
+
+.types_list {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.types_list_list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    row-gap: 20px;
+    z-index: 1;
+}
+
+.popular_slider_list {
+    display: flex;
+    column-gap: 50px;
+    width: calc(100%/3);
+}

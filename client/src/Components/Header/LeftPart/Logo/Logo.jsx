@@ -18,7 +18,7 @@ const Logo = (props) => {
                 </picture>
                 <div className={s.logo_text}>
                     <p className={s.name}>AZOVSTEEL</p>
-                    <div class={s.under_logo}>
+                    <div className={s.under_logo}>
                         <hr/>
                         <p>Carpathians</p>
                         <hr/>

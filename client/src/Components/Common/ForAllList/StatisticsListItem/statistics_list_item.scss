@@ -1,0 +1,25 @@
+.our_successes_list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    h2 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    hr {
+        margin: 15px 0;
+        border: none;
+        height: 2px;
+        width: 92px;
+        background-color: #F3AA3C;
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

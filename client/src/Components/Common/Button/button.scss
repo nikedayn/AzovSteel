@@ -44,3 +44,53 @@
         background-color: #387C43;
     }
 }
+
+.write_us_btn {
+    padding: 14px 19px;
+    background-color: #387C43;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.watch_btn {
+    padding: 15px 30px;
+    background-color: #387C43;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+.download_btn {
+    padding: 15px 30px;
+    background-color: #F3AA3C;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+.left_arrow_btn {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .left_arrow {
+        transform: rotate(90deg);
+    }
+}
+
+.right_arrow_btn {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .right_arrow {
+        transform: rotate(-90deg);
+    }
+}

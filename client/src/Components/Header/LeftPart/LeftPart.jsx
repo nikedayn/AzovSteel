@@ -6,7 +6,7 @@ const LeftPart = (props) => {
     return(
         <div className={s.left_part}>
             <Logo/>
-            <p class={s.where_do_we_deliver}>Оптові поставки металопрокату Україною та країнами ЄС</p>
+            <p className={s.where_do_we_deliver}>Оптові поставки металопрокату Україною та країнами ЄС</p>
         </div>
     )
 };

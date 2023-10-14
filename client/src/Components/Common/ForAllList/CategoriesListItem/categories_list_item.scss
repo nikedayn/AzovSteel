@@ -1,0 +1,49 @@
+.types_list_item {
+    position: relative;
+    padding: 30px 35px;
+    width: calc(100%/4 - 25px);
+    border-radius: 4px;
+    box-shadow: 5px 10px 30px 0 rgb(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+    .types_list_img1 {
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+
+    .types_list_img2 {
+        position: absolute;
+        right: 14px;
+        top: 17px;
+    }
+
+    .types_list_img3 {
+        position: absolute;
+        right: 11px;
+        top: 13px;
+    }
+
+    .types_list_img4 {
+        position: absolute;
+        right: -10px;
+        top: -5px;
+    }
+
+    .types_list_h2 {
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+    }
+
+    .watch_all {
+        color: #828282;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+}
