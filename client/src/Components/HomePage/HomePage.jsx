@@ -109,69 +109,6 @@ let categiries = [
     },
 ]
 
-let popularSlider = [
-    {
-        slideList: [
-            {
-                text: 'Швелер',
-                imgNumber: 1
-            },
-            {
-                text: 'Балка двотарова',
-                imgNumber: 2
-            },
-            {
-                text: 'Арматура',
-                imgNumber: 3
-            },
-            {
-                text: 'Уголок металлический',
-                imgNumber: 4
-            },
-        ]
-    },
-    {
-        slideList: [
-            {
-                text: 'Швелер',
-                imgNumber: 1
-            },
-            {
-                text: 'Балка двотарова',
-                imgNumber: 2
-            },
-            {
-                text: 'Арматура',
-                imgNumber: 3
-            },
-            {
-                text: 'Уголок металлический',
-                imgNumber: 4
-            },
-        ]
-    },
-    {
-        slideList: [
-            {
-                text: 'Швелер',
-                imgNumber: 1
-            },
-            {
-                text: 'Балка двотарова',
-                imgNumber: 2
-            },
-            {
-                text: 'Арматура',
-                imgNumber: 3
-            },
-            {
-                text: 'Уголок металлический',
-                imgNumber: 4
-            },
-        ]
-    },
-]
-
 const HomePage = (props) => {
     return(
         <main>
@@ -203,8 +140,9 @@ const HomePage = (props) => {
                     <Slider
                         class='popular'
                         text='ПОПУЛЯРНІ РОЗДІЛИ'
-                        sliderData={popularSlider}
-                        slideNumber={'3'}
+                        sliderData={props.popular.slides}
+                        slideIsNow={props.popular.slideIsNow}
+                        sliderFunction={props.changeSlide}
                     />
                 ]}
             />

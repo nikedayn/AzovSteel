@@ -3,7 +3,7 @@ import './for_all_list.scss';
 import NavListItem from './NavListItem/NavListItem';
 import StatisticsListItem from './StatisticsListItem/StatisticsListItem';
 import CategoriesListItem from './CategoriesListItem/CategoriesListItem';
-import PopularSliderListItem from './SlidersItems/PopularSliderListItem/PopularSliderListItem';
+import PopularSliderListItem from '../../Slider/PopularSlide/PopularSlide';
 
 const ForAllList = (props) => {
     let listItems = props.listItems.map((listItem, index) => {

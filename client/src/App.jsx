@@ -6,7 +6,7 @@ import Footer from "./Components/Footer/Footer";
 
 //для новых страниц
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import HomePage from "./Components/HomePage/HomePage";
+import HomeContainer from "./Components/HomePage/HomeContainer";
 
 const App = () => {
     return(
@@ -14,7 +14,7 @@ const App = () => {
             <BrowserRouter>
                 <Header/>
                 <Routes>
-                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/" element={<HomeContainer/>}/>
                 </Routes>
                 <Footer/>
             </BrowserRouter>

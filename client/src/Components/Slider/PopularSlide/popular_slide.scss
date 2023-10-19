@@ -1,0 +1,29 @@
+.popular_slider_list {
+    display: flex;
+    column-gap: 50px;
+
+    &_item {
+        width: calc(100%/4 - 25px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        padding: 40px;
+        justify-content: flex-end;
+        border-radius: 4px;
+        border: 1px #E0E0E0 solid;
+        position: relative;
+
+        h3 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .img1 {
+            top: 5px;
+            position: absolute;
+            height: 180px;
+        }
+    }
+}

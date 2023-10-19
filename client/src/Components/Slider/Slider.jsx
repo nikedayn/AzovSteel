@@ -1,39 +1,79 @@
 import './slider.scss';
 
-import Button from '../Common/Button/Button';
-import ForAllList from '../Common/ForAllList/ForAllList';
+import {useRef} from 'react';
+import PopularSlide from './PopularSlide/PopularSlide';
 
 const Slider = (props) => {
-    let slides = props.sliderData.map((slide, index) => {
-        console.log(slide);
-        return <ForAllList class={`${props.class}_slider`} type={`${props.class}_slider`} listItems={slide.slideList}/>
-    })
+    let slideBefore;
+    if(props.slideIsNow == 1) {
+        slideBefore = props.sliderData.find(slide => slide.id == props.sliderData.length);
+    }
+    else {
+        slideBefore = props.sliderData.find(slide => slide.id == props.slideIsNow - 1);   
+    }
+
+    let slideNow;
+    slideNow = props.sliderData.find(slide => slide.id == props.slideIsNow);
+
+    let slideAfter;
+    if(props.slideIsNow == props.sliderData.length) {
+        slideAfter = props.sliderData.find(slide => slide.id == 1);
+    }
+    else {
+        slideAfter = props.sliderData.find(slide => slide.id == props.slideIsNow + 1);   
+    }
+
+    console.log(slideBefore);
+    console.log(slideNow);
+    console.log(slideAfter);
+
+    let slideItem = (itemsInformation) => {
+        switch(props.class) {
+            case 'popular': {
+                return <PopularSlide itemsInformation={itemsInformation} class={`${props.class}_slider`}/>
+            }
+        }
+    }
+
+    const refs = {
+        sliderBody: useRef(null),
+    }
 
     return(
         <>
             <div className={`${props.class}_slider_header`}>
                 <h2 className={`${props.class}_slider_headline`}>{props.text}</h2>
                 <div className="slider_btns">
-                    <Button
-                        class='left_arrow'
-                        content={
-                            <svg className="left_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 1L6.5 6L1 1" stroke="#000000" strokeWidth="3"/>
-                            </svg>
-                        }
-                    />
-                    <Button
-                        class='right_arrow'
-                        content={
-                            <svg className="right_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 1L6.5 6L1 1" stroke="#000000" strokeWidth="3"/>
-                            </svg>
-                        }
-                    />
+                    <button onClick={() => {
+                        refs.sliderBody.current.classList.add('slideLeft');
+                        setTimeout(() => {
+                            props.sliderFunction(props.class, 'left');
+                        }, 780);
+                    }} className='left_arrow_btn'>
+                        <svg className="left_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1L6.5 6L1 1" stroke="#000000" strokeWidth="3"/>
+                        </svg>
+                    </button>
+                    <button onClick={() => {
+                        refs.sliderBody.current.classList.add('slideRight');
+                        setTimeout(() => {
+                            props.sliderFunction(props.class, 'right');
+                        }, 780);
+                    }}
+                    className='right_arrow_btn'>
+                        <svg className="right_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1L6.5 6L1 1" stroke="#000000" strokeWidth="3"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            <div className={`slider_body _${props.slideNumber}slides_body`}>
-                {slides}
+            <div onAnimationEndCapture={() => {
+                refs.sliderBody.current.classList.remove('slideLeft');
+                refs.sliderBody.current.classList.remove('slideRight');
+            }} ref={refs.sliderBody} className={`slider_body`}>
+                {slideItem(slideBefore.slideList)}
+                {slideItem(slideNow.slideList)}
+                {slideItem(slideAfter.slideList)}
             </div>
         </>
     )
