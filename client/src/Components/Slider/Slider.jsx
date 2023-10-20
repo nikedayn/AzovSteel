@@ -23,10 +23,6 @@ const Slider = (props) => {
         slideAfter = props.sliderData.find(slide => slide.id == props.slideIsNow + 1);   
     }
 
-    console.log(slideBefore);
-    console.log(slideNow);
-    console.log(slideAfter);
-
     let slideItem = (itemsInformation) => {
         switch(props.class) {
             case 'popular': {
@@ -46,9 +42,6 @@ const Slider = (props) => {
                 <div className="slider_btns">
                     <button onClick={() => {
                         refs.sliderBody.current.classList.add('slideLeft');
-                        setTimeout(() => {
-                            props.sliderFunction(props.class, 'left');
-                        }, 780);
                     }} className='left_arrow_btn'>
                         <svg className="left_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1L6.5 6L1 1" stroke="#000000" strokeWidth="3"/>
@@ -56,9 +49,6 @@ const Slider = (props) => {
                     </button>
                     <button onClick={() => {
                         refs.sliderBody.current.classList.add('slideRight');
-                        setTimeout(() => {
-                            props.sliderFunction(props.class, 'right');
-                        }, 780);
                     }}
                     className='right_arrow_btn'>
                         <svg className="right_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +58,14 @@ const Slider = (props) => {
                 </div>
             </div>
             <div onAnimationEndCapture={() => {
-                refs.sliderBody.current.classList.remove('slideLeft');
-                refs.sliderBody.current.classList.remove('slideRight');
+                if (refs.sliderBody.current.classList.contains('slideLeft')) {
+                    props.sliderFunction(props.class, 'left');
+                    refs.sliderBody.current.classList.remove('slideLeft');
+                }
+                else if (refs.sliderBody.current.classList.contains('slideRight')) {
+                    props.sliderFunction(props.class, 'right');
+                    refs.sliderBody.current.classList.remove('slideRight');
+                }
             }} ref={refs.sliderBody} className={`slider_body`}>
                 {slideItem(slideBefore.slideList)}
                 {slideItem(slideNow.slideList)}
