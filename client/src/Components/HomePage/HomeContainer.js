@@ -3,7 +3,8 @@ import HomePage from "./HomePage";
 import { changeSlide } from "../../redux/reducers/slidersReducer";
 
 const mapStateToProps = (state) => ({
-    popular: state.slidersReducer.popularSlider
+    popular: state.slidersReducer.popularSlider,
+    special: state.slidersReducer.specialSlider
 })
 
 const mapDispatchToProps = {

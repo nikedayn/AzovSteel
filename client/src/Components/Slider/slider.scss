@@ -16,12 +16,24 @@
     }
 }
 
+.special_slider_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 58px;
+    width: 100%;
+    
+    .special_slider_headline {
+        font-size: 24px;
+    }   
+}
+
 .slider_body {
     display: flex;
-    column-gap: 50px;
+    column-gap: 100px;
     transition: left 0.3s;
     transition: right 0.3s;
-    width: calc((100% * 3) + 100px);
+    width: calc((100% * 3) + 200px);
     justify-content: center;
     position: relative;
 }
@@ -45,11 +57,11 @@
     }
 
     95% {
-        left: calc(100% + 50px);
+        left: calc(100% + 100px);
     }
 
     100% {
-        left: calc(100% + 50px);
+        left: calc(100% + 100px);
     }
 }
 
@@ -59,10 +71,10 @@
     }
 
     95% {
-        right: calc(100% + 50px);
+        right: calc(100% + 100px);
     }
 
     100% {
-        right: calc(100% + 50px);
+        right: calc(100% + 100px);
     }
 }

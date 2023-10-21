@@ -27,7 +27,7 @@ const PopularSlide= (props) => {
         return  <li className={`${props.class}_list_item`}>
                     {imgThatNeed(itemInformation.imgNumber)}
                     <h3>{itemInformation.text}</h3>
-                </li>   
+                </li>
     })
 
     return(

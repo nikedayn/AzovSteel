@@ -45,3 +45,15 @@
         background-color: #FAFAFA;
     }
 }
+
+.special_section {
+    margin-bottom: 70px;
+
+    .container {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+}

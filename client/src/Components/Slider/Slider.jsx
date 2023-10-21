@@ -2,6 +2,7 @@ import './slider.scss';
 
 import {useRef} from 'react';
 import PopularSlide from './PopularSlide/PopularSlide';
+import SpecialSlide from './SpecialSlide/SpecialSlide';
 
 const Slider = (props) => {
     let slideBefore;
@@ -27,6 +28,9 @@ const Slider = (props) => {
         switch(props.class) {
             case 'popular': {
                 return <PopularSlide itemsInformation={itemsInformation} class={`${props.class}_slider`}/>
+            }
+            case 'special': {
+                return <SpecialSlide itemsInformation={itemsInformation} class={`${props.class}_slider`}/>
             }
         }
     }

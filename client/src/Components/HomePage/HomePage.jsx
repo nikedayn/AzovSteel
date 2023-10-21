@@ -146,6 +146,18 @@ const HomePage = (props) => {
                     />
                 ]}
             />
+            <Section
+                class={'special'}
+                content={[
+                    <Slider
+                        class='special'
+                        text='СПЕЦІАЛЬНІ ПРОПОЗИЦІЇ'
+                        sliderData={props.special.slides}
+                        slideIsNow={props.special.slideIsNow}
+                        sliderFunction={props.changeSlide}
+                    />
+                ]}
+            />
         </main>
     )
 };
