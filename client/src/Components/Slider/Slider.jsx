@@ -45,14 +45,18 @@ const Slider = (props) => {
                 <h2 className={`${props.class}_slider_headline`}>{props.text}</h2>
                 <div className="slider_btns">
                     <button onClick={() => {
-                        refs.sliderBody.current.classList.add('slideLeft');
+                        if (!refs.sliderBody.current.classList.contains('slideRight')) {
+                            refs.sliderBody.current.classList.add('slideLeft');
+                        }
                     }} className='left_arrow_btn'>
                         <svg className="left_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1L6.5 6L1 1" stroke="#000000" strokeWidth="3"/>
                         </svg>
                     </button>
                     <button onClick={() => {
-                        refs.sliderBody.current.classList.add('slideRight');
+                        if (!refs.sliderBody.current.classList.contains('slideLeft')) {
+                            refs.sliderBody.current.classList.add('slideRight');
+                        }
                     }}
                     className='right_arrow_btn'>
                         <svg className="right_arrow" width="17" height="11" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
