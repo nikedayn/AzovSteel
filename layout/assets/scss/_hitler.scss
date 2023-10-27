@@ -116,6 +116,7 @@
     row-gap: 35px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .cart_item:last-child {
@@ -176,4 +177,319 @@
 
 .itogo_p {
     margin-bottom: 8px;;
+}
+
+.hitler {
+    display: flex;
+    justify-content: end;
+}
+
+.itogogogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    column-gap: 11px;
+}
+
+.itogogogop {
+    font-size: 24px;
+    line-height: 21.09px;
+    font-weight: 700px;
+}
+
+.itogogogoprice {
+    font-size: 28px;
+}
+
+//SUPERMEGAGIGABYTE DOSTAVKA I OLPATA SECTION
+
+
+.sap {
+    margin-bottom: 50px;
+}
+
+.radio-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 45px;
+  }
+  
+  .radio-input input {
+    border: 1px solid black;
+    appearance: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    margin: 0;
+  }
+  
+  .radio-input input:hover {
+    scale: 1.2;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  
+  .radio-input .circle {
+    position: relative;
+    top: 0em;
+    left: -1.6em;
+    width: 1.4em;
+    height: 1.4em;
+    background-color: #387C43;
+    scale: 0;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+  }
+  
+  .radio-input input:checked {
+    box-shadow: none;
+    border: 1px solid black;
+  }
+  
+  .radio-input input:checked + .circle {
+    transform: rotate(360deg);
+    scale: 1;
+  }
+
+  .classGEGE {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .osoba {
+    padding-right: 20px;
+  }
+
+
+
+
+
+.data_list_item_p_span {
+    color: red;
+}
+
+.data_list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    padding-right: 59px;
+    margin-bottom: 50px;
+    &_item_p {
+        margin-bottom: 15px;
+    }
+
+    &_item_input {
+        width: 300px;
+        height: 25px;
+        font-size: 16px;
+        appearance: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: 1px solid #E0E0E0;
+        &::placeholder {
+            color: #BDBDBD;
+        }
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }     
+    } 
+    
+}
+
+
+
+
+.radio-input2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 45px;
+  }
+  
+  .radio-input2 input {
+    border: 1px solid black;
+    appearance: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    margin: 0;
+  }
+  
+  .radio-input2 input:hover {
+    scale: 1.2;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  
+  .radio-input2 .circle2 {
+    position: relative;
+    top: 0em;
+    left: -1.6em;
+    width: 1.4em;
+    height: 1.4em;
+    background-color: #387C43;
+    scale: 0;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+  }
+  
+  .radio-input2 input:checked {
+    box-shadow: none;
+    border: 1px solid black;
+  }
+  
+  .radio-input2 input:checked + .circle2 {
+    transform: rotate(360deg);
+    scale: 1;
+  }
+
+  .osoba {
+    padding-right: 20px;
+  }
+
+
+
+
+
+
+///////////////////////////////
+
+.data2 {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.data2_list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    column-gap: 50px;
+    padding-right: 59px;
+    margin-bottom: 50px;
+    &_item_p {
+        margin-bottom: 15px;
+        &::after {
+            content: '*';
+            color: red;
+        }
+    }
+
+    &_item_input {
+        width: 460px;
+        height: 25px;
+        font-size: 16px;
+        appearance: none;
+        padding: 10px 20px;
+        margin-bottom: 37px;
+        border-radius: 4px;
+        border: 1px solid #E0E0E0;
+        &::placeholder {
+            color: #BDBDBD;
+        }
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }     
+    } 
+    
+}
+
+
+.additionally_input2 {
+    width: 500px;
+    height: 45px;
+    font-size: 16px;
+    appearance: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    background-image: url('../img/arrow_for_select.svg');
+    background-repeat: no-repeat;
+    background-position-x: 470px;
+    background-position-y: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    column-gap: 20px;
+    transition: border-color 0.5s;
+
+ 
+    &:-ms-expand { 
+        display: flex; 
+    }
+    
+    &:hover { 
+        border-color: #888; 
+    } 
+
+    &:focus {
+        border-radius: 4px 4px 0 0;
+        border-bottom: 0;
+        border-color: #aaa; 
+        box-shadow: 5px 10px 40px 0 rgba(0, 0, 0 ,0.12);
+        color: #222;
+        outline: none;
+    }
+}
+
+.additionally_option2 {
+    padding: 25px 20px;
+    border-radius: 0 0 4px 4px;
+    &::selection{  
+        background-color: red;
+    }
+}
+
+.den4ik {
+    resize: none;
+    width: 260%;
+    border-radius: 5px;
+    height: 227px;
+
+    &::placeholder {
+        font-family: Roboto;
+        font-size: 16px;
+    }
+}
+
+.balabol {
+    padding-bottom: 14px;
+}
+
+
+.pipe32 {
+    height: 1px;
+    border: none;
+    background-color: #e0e0e0;
+    margin-bottom: 50px;
+}
+
+//////////////////////
+
+
+.botan {
+    width: 200px;
+    height: 52px;
+    background-color: #387C43;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin-right: 56px;
+}
+
+
+.botan_div {
+    display: flex;
+    align-items: center;
+}
+
+.botan_p_a {
+    color: #2F80ED;
+    text-decoration: underline;
 }
