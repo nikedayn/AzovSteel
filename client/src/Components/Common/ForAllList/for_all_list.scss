@@ -28,3 +28,50 @@
     column-gap: 50px;
     width: calc(100%/3);
 }
+
+.services_list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    width: 50%;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    column-gap: 20px;
+}
+
+.advantages_list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 44px 50px;
+    width: 100%;
+}
+
+.company_info_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &_link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.catalog_info_list {
+    display: flex;
+    row-gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_item {
+        width: calc(100%/2 - 10px);
+    }
+
+    &_link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

@@ -1,9 +1,9 @@
 import './popular_slide.scss';
 
-import img1 from '../../assets/img/popular1.png';
-import img2 from '../../assets/img/popular2.png';
-import img3 from '../../assets/img/popular3.png';
-import img4 from '../../assets/img/popular4.png';
+import img1 from '../../../assets/img/popular1.png';
+import img2 from '../../../assets/img/popular2.png';
+import img3 from '../../../assets/img/popular3.png';
+import img4 from '../../../assets/img/popular4.png';
 
 const PopularSlide= (props) => {
     let imgThatNeed = (itemNumber) => {
@@ -37,4 +37,4 @@ const PopularSlide= (props) => {
     )
 };
 
-export default PopularSlide
+export default PopularSlide;

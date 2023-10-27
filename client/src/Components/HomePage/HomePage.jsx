@@ -2,7 +2,10 @@ import Section from "../Common/Section/Section";
 import Slogan from "./Slogan/Slogan";
 import ForAllList from "../Common/ForAllList/ForAllList";
 import TypesButtons from "./TypesButtons/TypesButtons";
-import Slider from "../Slider/Slider";
+import Slider from "../Common/Slider/Slider";
+import ServisePart from "./ServicesPart/ServicesPart";
+import AdvantagesPart from "./AdvantagesPart/AdvantagesPart";
+import NewsBtn from "./NewsBtn/NewsBtn";
 
 let ourSuccesses = [
     {
@@ -109,6 +112,76 @@ let categiries = [
     },
 ]
 
+let services = [
+    {
+        text: 'Різка металопрокату',
+        imgNumber: 1
+    },
+    {
+        text: 'Шліфовка труб та металопракату',
+        imgNumber: 2
+    },
+    {
+        text: 'Термообробка(закалка металовиробів)',
+        imgNumber: 3
+    },
+    {
+        text: 'Нанесення антикоррозійних покриттів',
+        imgNumber: 4
+    },
+    {
+        text: 'Лиття деталей і заготовок',
+        imgNumber: 5
+    },
+    {
+        text: 'Токарні, фрезерні та слесарні роботи по металу',
+        imgNumber: 6
+    },
+    {
+        text: 'Цинкування металовиробів',
+        imgNumber: 7
+    },
+    {
+        text: 'Ізоляція труб',
+        imgNumber: 8
+    }
+]
+
+let advantages = [
+    {
+        text: 'Великий вибір якісної продукції',
+        imgNumber: 1
+    },
+    {
+        text: 'Широкий вибір металовиробів в одному місці',
+        imgNumber: 2
+    },
+    {
+        text: 'Допомога у митному таможенні вантажів',
+        imgNumber: 3
+    },
+    {
+        text: 'Доставляємо продукцію по Україні або інших країнах',
+        imgNumber: 4
+    },
+    {
+        text: 'Персональний підхід до клієнтів',
+        imgNumber: 5
+    },
+    {
+        text: 'Знижки і бонуси постійним клієнтам',
+        imgNumber: 6
+    },
+    {
+        text: 'Надання товарного кредиту та відстрочення оплати',
+        imgNumber: 7
+    },
+    {
+        text: 'Великий вибір послуг на складі: упаковка, різання у розмірі та ін.',
+        imgNumber: 8
+    }
+]
+
 const HomePage = (props) => {
     return(
         <main>
@@ -156,6 +229,53 @@ const HomePage = (props) => {
                         slideIsNow={props.special.slideIsNow}
                         sliderFunction={props.changeSlide}
                     />
+                ]}
+            />
+            <Section
+                class={'services'}
+                content={[
+                    <ServisePart
+                        text='ПОСЛУГИ'
+                        class='services'
+                        listItems={services}
+                        listType={'services'}
+                    />
+                ]}
+            />
+            <Section
+                class={'clients'}
+                content={[
+                    <Slider
+                        class='clients'
+                        text='НАШІ КЛІЄНТИ'
+                        sliderData={props.clients.slides}
+                        slideIsNow={props.clients.slideIsNow}
+                        sliderFunction={props.changeSlide}
+                    />
+                ]}
+            />
+            <Section
+                class={'advantages'}
+                content={[
+                    <AdvantagesPart
+                        text='ЧОМУ ОБИРАЮТЬ НАС?'
+                        class='advantages'
+                        listItems={advantages}
+                        listType={'advantages'}
+                    />
+                ]}
+            />
+            <Section
+                class={'news'}
+                content={[
+                    <Slider
+                        class='news'
+                        text='НОВИНИ'
+                        sliderData={props.news.slides}
+                        slideIsNow={props.news.slideIsNow}
+                        sliderFunction={props.changeSlide}
+                    />,
+                    <NewsBtn/>
                 ]}
             />
         </main>

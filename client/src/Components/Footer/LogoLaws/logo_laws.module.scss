@@ -1,0 +1,25 @@
+.logo_laws {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.confidents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+
+    &_text {
+        color: #000;
+        font-size: 12px;
+        line-height: 11px;
+        text-decoration-line: underline;
+    }
+
+    &_laws {
+        color: #4E4E4E;
+        font-size: 10px;
+        line-height: 11px;
+        width: 199px;
+    }
+}

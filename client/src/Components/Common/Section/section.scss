@@ -57,3 +57,64 @@
         overflow-x: hidden;
     }
 }
+
+.services_section {
+    margin-bottom: 50px;
+}
+
+.clients_section {
+    margin-bottom: 80px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+}
+
+.advantages_section {
+    margin-bottom: 80px;
+    
+    .container {
+        padding-top: 80px;
+        padding-bottom: 100px;
+        background-color: #FAFAFA;
+    }
+}
+
+.news_section {
+    margin-bottom: 82px;
+
+    .container {
+        row-gap: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+}
+
+.top_footer_section {
+    height: 300px;
+
+    .container {
+        height: 220px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #F2F2F2;
+    }
+}
+
+.bottom_footer_section {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #666;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

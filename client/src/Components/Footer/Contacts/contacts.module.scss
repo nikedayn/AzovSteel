@@ -1,0 +1,29 @@
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+
+    a {
+        font-size: 18px;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.call_button {
+    width: 162px;
+    height: 46px;
+    font-weight: 600;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background-color: #F3AA3C;
+    border: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}

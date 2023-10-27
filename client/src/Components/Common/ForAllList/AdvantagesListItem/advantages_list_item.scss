@@ -1,0 +1,15 @@
+.advantages_list_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 26px;
+    height: 60px;
+    width: calc(100%/4 - 86px);
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 30px 23px;
+}
+
+.advantages_list_text {
+    font-size: 14px;
+}

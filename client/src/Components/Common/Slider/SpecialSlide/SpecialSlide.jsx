@@ -1,7 +1,7 @@
-import './special_slider.scss';
+import './special_slide.scss';
 
-import img1 from '../../assets/img/sanya_pipes_dubl2.png';
-import img2 from '../../assets/img/sanya_klapan_dubl2.png';
+import img1 from '../../../assets/img/sanya_pipes_dubl2.png';
+import img2 from '../../../assets/img/sanya_klapan_dubl2.png';
 
 const SpecialSlide = (props) => {
     let imgThatNeed = (itemNumber) => {

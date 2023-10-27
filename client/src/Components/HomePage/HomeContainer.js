@@ -4,7 +4,9 @@ import { changeSlide } from "../../redux/reducers/slidersReducer";
 
 const mapStateToProps = (state) => ({
     popular: state.slidersReducer.popularSlider,
-    special: state.slidersReducer.specialSlider
+    special: state.slidersReducer.specialSlider,
+    clients: state.slidersReducer.clientsSlider,
+    news: state.slidersReducer.newsSlider
 })
 
 const mapDispatchToProps = {

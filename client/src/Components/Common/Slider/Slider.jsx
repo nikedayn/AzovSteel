@@ -3,6 +3,8 @@ import './slider.scss';
 import {useRef} from 'react';
 import PopularSlide from './PopularSlide/PopularSlide';
 import SpecialSlide from './SpecialSlide/SpecialSlide';
+import ClientsSlide from './ClientsSlide/ClientsSlide';
+import NewsSlide from './NewsSlide/NewsSlide';
 
 const Slider = (props) => {
     let slideBefore;
@@ -31,6 +33,12 @@ const Slider = (props) => {
             }
             case 'special': {
                 return <SpecialSlide itemsInformation={itemsInformation} class={`${props.class}_slider`}/>
+            }
+            case 'clients': {
+                return <ClientsSlide itemsInformation={itemsInformation} class={`${props.class}_slider`}/>
+            }
+            case 'news': {
+                return <NewsSlide itemsInformation={itemsInformation} class={`${props.class}_slider`}/>
             }
         }
     }

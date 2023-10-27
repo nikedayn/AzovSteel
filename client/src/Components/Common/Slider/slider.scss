@@ -28,6 +28,29 @@
     }   
 }
 
+.clients_slider_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 57px;
+    width: 100%;
+    
+    .clients_slider_headline {
+        font-size: 24px;
+    }   
+}
+
+.news_slider_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    .news_slider_headline {
+        font-size: 24px;
+    }   
+}
+
 .slider_body {
     display: flex;
     column-gap: 100px;

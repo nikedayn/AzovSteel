@@ -1,0 +1,11 @@
+.services_list_item {
+    width: calc(100%/2 - 10px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.services_list_link {
+    text-decoration: underline;
+}
