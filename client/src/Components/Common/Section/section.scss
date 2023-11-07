@@ -74,8 +74,6 @@
 }
 
 .advantages_section {
-    margin-bottom: 80px;
-    
     .container {
         padding-top: 80px;
         padding-bottom: 100px;
@@ -84,6 +82,7 @@
 }
 
 .news_section {
+    margin-top: 75px;
     margin-bottom: 82px;
 
     .container {
@@ -116,5 +115,47 @@
         background-color: #666;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+}
+
+.catalog_section {
+    margin-bottom: 50px;
+}
+
+.about_stainless_section {
+    margin-bottom: 104px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.filter_section {
+    padding-top: 10px;
+    margin-bottom: 45px;
+}
+
+.products_section {
+    margin-bottom: 145px;
+}
+
+.about_stainlesss_section {
+    margin-bottom: 38px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.about_section {
+    margin-bottom: 78px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

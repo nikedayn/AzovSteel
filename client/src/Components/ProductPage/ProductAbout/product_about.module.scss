@@ -1,0 +1,44 @@
+.description {
+    width: calc(100%/2 - 75px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    .about_text {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+
+.characteristics {
+    margin-right: 50px;
+    width: calc(100%/2 - 75px);
+
+    &_h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 22px;
+            border-bottom: 1px #BDBDBD dashed;
+        }
+
+        &_name {
+            font-size: 16px;
+        }
+
+        &_value {
+            font-size: 16px;
+        }
+    }
+}

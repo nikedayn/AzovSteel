@@ -1,0 +1,42 @@
+.products_tabel {
+    width: 100%;
+    text-align: left;
+    // border-collapse: collapse;
+    border-spacing: 0 20px;
+    padding: 0;
+
+    td, th {
+        padding: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #BDBDBD;
+
+        &:first-child {
+            width: 408px;
+        }
+
+        &:nth-child(2) {
+            width: 135px;
+        }
+
+        &:nth-child(3) {
+            width: 170px;
+        }
+
+        &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+            width: 67px;
+        }
+
+        &:last-child {
+            width: 26px;
+        }
+    }
+
+    &_head {
+        font-size: 14px;
+        color: #828282;
+    }
+
+    &_headline {
+        font-weight: 400;
+    }
+}

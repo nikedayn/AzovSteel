@@ -5,12 +5,13 @@ import StatisticsListItem from './StatisticsListItem/StatisticsListItem';
 import CategoriesListItem from './CategoriesListItem/CategoriesListItem';
 import ServicesListItem from './ServisesListItem/ServicesListItem';
 import AdvantagesListItem from './AdvantagesListItem/AdvantagesListItem';
+import ConfigurationListItem from './ConfigurationListItem/ConfigurationListItem';
 
 const ForAllList = (props) => {
     let listItems = props.listItems.map((listItem, index) => {
         switch(props.type) {
             case 'navigation': {
-                return <NavListItem itemInformation={listItem} class={`${props.class}_list`}/>
+                return <NavListItem key={`naw${props.class}${index}`} itemInformation={listItem} class={`${props.class}_list`}/>
             }
 
             case 'statistics': {
@@ -26,6 +27,9 @@ const ForAllList = (props) => {
             }
             case 'advantages': {
                 return <AdvantagesListItem itemInformation={listItem} class={`${props.class}_list`}/>
+            }
+            case 'configuration': {
+                return <ConfigurationListItem itemInformation={listItem} class={`${props.class}_list`}/>
             }
         }
     })

@@ -1,4 +1,3 @@
-import './services_list_item.scss';
 import { Link } from 'react-router-dom';
 
 //images
@@ -10,6 +9,11 @@ import img5 from '../../../assets/img/service_logo5.png';
 import img6 from '../../../assets/img/service_logo6.png';
 import img7 from '../../../assets/img/service_logo7.png';
 import img8 from '../../../assets/img/service_logo8.png';
+import img9 from '../../../assets/img/catalog_img1.png';
+import img10 from '../../../assets/img/catalog_img4.png';
+import img11 from '../../../assets/img/catalog_img5.png';
+import img12 from '../../../assets/img/catalog_img6.png';
+import img13 from '../../../assets/img/catalog_img7.png';
 
 
 const ServicesListItem = (props) => {
@@ -38,6 +42,30 @@ const ServicesListItem = (props) => {
             }
             case 8: {
                 return <img src={img8} alt=""/>
+            }
+            case 9: {
+                return <img src={img9} alt=""/>
+            }
+            case 10: {
+                return <img src={img9} alt=""/>
+            }
+            case 11: {
+                return <img src={img9} alt=""/>
+            }
+            case 12: {
+                return <img src={img10} alt=""/>
+            }
+            case 13: {
+                return <img src={img11} alt=""/>
+            }
+            case 14: {
+                return <img src={img9} alt=""/>
+            }
+            case 15: {
+                return <img src={img12} alt=""/>
+            }
+            case 16: {
+                return <img src={img13} alt=""/>
             }
         }
     }

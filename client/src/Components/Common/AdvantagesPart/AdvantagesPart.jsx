@@ -1,6 +1,6 @@
 import './advantages_part.scss';
 
-import ForAllList from '../../Common/ForAllList/ForAllList';
+import ForAllList from '../ForAllList/ForAllList';
 
 const AdvantagesPart = (props) => {
     return(

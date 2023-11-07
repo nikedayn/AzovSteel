@@ -10,23 +10,23 @@ import Button from '../Common/Button/Button';
 
 let navLinks = [
     {
-        path: '/about_company',
+        path: '/',
         text: 'Про компанію'
     },
     {
-        path: '/price-lists',
+        path: '/',
         text: 'Прайс-листи'
     },
     {
-        path: '/production',
+        path: '/',
         text: 'Виробництво'
     },
     {
-        path: '/procurement',
+        path: '/',
         text: 'Закупівлі'
     },
     {
-        path: '/contacts',
+        path: '/',
         text: 'Контакти'
     }
 ]
@@ -35,6 +35,7 @@ const Header = (props) => {
     return(
         <header>
             <Section 
+                key='top_header'
                 content={[
                     <LeftPart/>,
                     <ForAllList 
@@ -47,7 +48,8 @@ const Header = (props) => {
                 class={'top_header'}
             />
             <hr className="header_line"/>
-            <Section 
+            <Section
+                key='bottom_header'
                 content={[
                     <CatalogSearchAndLocation/>,
                     <Button

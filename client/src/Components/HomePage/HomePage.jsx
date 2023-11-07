@@ -4,7 +4,7 @@ import ForAllList from "../Common/ForAllList/ForAllList";
 import TypesButtons from "./TypesButtons/TypesButtons";
 import Slider from "../Common/Slider/Slider";
 import ServisePart from "./ServicesPart/ServicesPart";
-import AdvantagesPart from "./AdvantagesPart/AdvantagesPart";
+import AdvantagesPart from "../Common/AdvantagesPart/AdvantagesPart";
 import NewsBtn from "./NewsBtn/NewsBtn";
 
 let ourSuccesses = [
@@ -27,19 +27,19 @@ let categiries = [
         text: 'ТРУБНИЙ ПРОКАТ',
         links: [
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Сортовий прокат'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Фасонний прокат'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Листовий прокат'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Стрічка металева'
             }
         ],
@@ -49,19 +49,19 @@ let categiries = [
         ТРУБОПРОВІДІВ`,
         links: [
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Металлочерепица'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Профнастил'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Додаткові елементи'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Водостічна система'
             }
         ],
@@ -71,19 +71,19 @@ let categiries = [
         АРМАТУРА`,
         links: [
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Сайдинг металевий'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Панелі'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Додаткові елементи'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Елементи безпеки'
             }
         ],
@@ -93,19 +93,19 @@ let categiries = [
         МЕТАЛОПРОКАТ`,
         links: [
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Сортовий прокат'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Фасонний прокат'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Листовий прокат'
             },
             {
-                path: '/',
+                path: '/sheel_metal',
                 text: 'Стрічка металева'
             }
         ],
@@ -114,34 +114,42 @@ let categiries = [
 
 let services = [
     {
+        path: '/',
         text: 'Різка металопрокату',
         imgNumber: 1
     },
     {
+        path: '/',
         text: 'Шліфовка труб та металопракату',
         imgNumber: 2
     },
     {
+        path: '/',
         text: 'Термообробка(закалка металовиробів)',
         imgNumber: 3
     },
     {
+        path: '/',
         text: 'Нанесення антикоррозійних покриттів',
         imgNumber: 4
     },
     {
+        path: '/',
         text: 'Лиття деталей і заготовок',
         imgNumber: 5
     },
     {
+        path: '/',
         text: 'Токарні, фрезерні та слесарні роботи по металу',
         imgNumber: 6
     },
     {
+        path: '/',
         text: 'Цинкування металовиробів',
         imgNumber: 7
     },
     {
+        path: '/',
         text: 'Ізоляція труб',
         imgNumber: 8
     }
@@ -186,7 +194,8 @@ const HomePage = (props) => {
     return(
         <main>
             <Section
-                class={'home'}
+                key='home'
+                class='home'
                 content={[
                     <Slogan/>,
                     <ForAllList
@@ -197,7 +206,8 @@ const HomePage = (props) => {
                 ]}
             />
             <Section
-                class={'types'}
+                key='types'
+                class='types'
                 content={[
                     <ForAllList
                         listItems={categiries} 
@@ -208,7 +218,8 @@ const HomePage = (props) => {
                 ]}
             />
             <Section
-                class={'popular'}
+                key='popular'
+                class='popular'
                 content={[
                     <Slider
                         class='popular'
@@ -220,7 +231,8 @@ const HomePage = (props) => {
                 ]}
             />
             <Section
-                class={'special'}
+                key='special'
+                class='special'
                 content={[
                     <Slider
                         class='special'
@@ -232,7 +244,8 @@ const HomePage = (props) => {
                 ]}
             />
             <Section
-                class={'services'}
+                key='services'
+                class='services'
                 content={[
                     <ServisePart
                         text='ПОСЛУГИ'
@@ -243,7 +256,8 @@ const HomePage = (props) => {
                 ]}
             />
             <Section
-                class={'clients'}
+                key='clients'
+                class='clients'
                 content={[
                     <Slider
                         class='clients'
@@ -255,7 +269,8 @@ const HomePage = (props) => {
                 ]}
             />
             <Section
-                class={'advantages'}
+                key='advantages'
+                class='advantages'
                 content={[
                     <AdvantagesPart
                         text='ЧОМУ ОБИРАЮТЬ НАС?'
@@ -266,7 +281,8 @@ const HomePage = (props) => {
                 ]}
             />
             <Section
-                class={'news'}
+                key='news'
+                class='news'
                 content={[
                     <Slider
                         class='news'

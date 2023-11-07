@@ -1,0 +1,44 @@
+.products {
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+
+    &_logo {
+        display: flex;
+        align-items: center;
+        column-gap: 31px;
+    }
+
+    &_name {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &_refs_list {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        &_item:last-child {
+            border: none;
+            padding: 0;
+            p {
+                color: #BDBDBD;
+            }
+        }
+
+        &_item {
+            height: 11px;
+            border-right: 1px solid black;
+            padding-right: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        &_link {
+            font-size: 12px;
+        }
+    }
+}
